@@ -1,11 +1,10 @@
 <template>
     <MonacoEditor
-            width="800"
             height="500"
             theme="vs-dark"
             language="javascript"
             :options="options"
-            @change="onChange"
+            v-model="code"
     ></MonacoEditor>
 </template>
 
@@ -21,7 +20,12 @@ export default {
         return {
             options: {
                 //Monaco Editor Options
-            }
+            },
+            code: 'class Main {\n' +
+                '\tpublic int solution(int[] arr) {\n' +
+                '\t\t// Write your solution here\n' +
+                '\t}\n' +
+                '}'
         }
     },
     methods: {
