@@ -1,12 +1,18 @@
 <template>
     <div class="top-panel-container">
-        Time left: 0h 27m
+        <clock class="clock"></clock> 0h 27m
+        <b-button class="submit-button" variant="light" size="sm">Submit</b-button>
     </div>
 </template>
 
 <script>
+    import Clock from './Clock.vue'
+
     export default {
-        name: "TopPanel"
+        name: "TopPanel",
+        components: {
+            Clock
+        }
     }
 </script>
 
@@ -25,5 +31,17 @@
         top: 0;
         left: 3vw;
         text-align: center;
+        position: relative;
+    }
+
+    .clock {
+        margin-right: 10px;
+    }
+
+    .top-panel-container .btn-light {
+        background-color: $vscode-dark !important;
+        color: white !important;
+        position: absolute;
+        right: 80px;
     }
 </style>

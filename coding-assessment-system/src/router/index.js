@@ -5,6 +5,7 @@ import AssessmentView from "../views/AssessmentView";
 
 Vue.use(VueRouter);
 
+
 const routes = [
   {
     path: '/',
@@ -12,9 +13,13 @@ const routes = [
     component: Home
   },
   {
-    path: '/assessment',
+    path: '/assessment/:sessionId',
     name: 'Assessment',
-    component: AssessmentView
+    component: AssessmentView,
+  },
+  {
+    path: '*',
+    component: Home // TODO, replace this with a not found component
   }
 ];
 
