@@ -6,7 +6,7 @@
 
       <br>
       <p class="info">
-          Code Studio is an coding skills assessment platform
+          Code Studio is a coding skills assessment platform
           <br>
               that is powered by OBSS.
           <br>
