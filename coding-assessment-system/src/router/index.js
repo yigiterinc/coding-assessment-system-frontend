@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import AssessmentView from "../views/AssessmentView";
+import SurveyView from "@/views/SurveyView";
 
 Vue.use(VueRouter);
 
@@ -14,8 +15,13 @@ const routes = [
   },
   {
     path: '/assessment/:sessionId',
-    name: 'Assessment',
+    name: 'AssessmentView',
     component: AssessmentView,
+  },
+  {
+    path: '/survey/:questionNo',
+    name: 'SurveyView',
+    component: SurveyView
   },
   {
     path: '*',

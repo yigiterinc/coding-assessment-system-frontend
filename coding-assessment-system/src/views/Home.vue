@@ -54,7 +54,7 @@
     methods: {
       onSubmit: function () {
         console.log(this.sessionId)
-        this.$router.push({ name: 'Assessment', params: {sessionId: this.sessionId }})
+        this.$router.push({ name: 'AssessmentView', params: {sessionId: this.sessionId }})
       }
     }
   }
