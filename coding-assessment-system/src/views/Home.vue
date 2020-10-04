@@ -1,10 +1,13 @@
 <template>
   <div class="home">
     <img src="../assets/images/kodcu.jpg" class="home-wallpaper">
+    <div class="navbar-with-login">
+      <navigation-bar></navigation-bar>
+    </div>
     <div class="container">
+      <br><br><br><br><br><br><br><br><br><br>
       <h1 class="header">Welcome to Code Studio</h1>
 
-      <br>
       <p class="info">
           Code Studio is a coding skills assessment platform
           <br>
@@ -37,11 +40,11 @@
 </template>
 
 <script>
-
+  import NavigationBar from "../components/NavigationBar";
   export default {
     name: 'Home',
     components: {
-
+      NavigationBar
     },
     props: {
 
