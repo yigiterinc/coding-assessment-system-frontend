@@ -1,14 +1,20 @@
 <template>
 	<div v-if="question">
 		<div v-if="multipleAnswers">
-      <b-form-group :label="question.text">
+      <b-form-group>
+        <div class="question-text">
+          {{question.text}}
+        </div>
         <b-form-checkbox-group
+            stacked
             id="checkbox-group-1"
             v-model="selectedAnswers"
             name="answer"
+            class="options-container"
         >
           <b-form-checkbox
               v-for="(option, index) in question.options"
+              class="option"
               :key="index"
               :value="option"
           >
@@ -18,14 +24,20 @@
       </b-form-group>
     </div>
 		<div v-else>
-      <b-form-group :label="question.text">
-        <b-form-radio v-for="(option, index) in question.options"
-                      :key="index"
-                      v-model="selectedAnswer"
-                      name="answer"
-                      :value="option">
-          {{ option }}
-        </b-form-radio>
+      <b-form-group>
+        <div class="question-text">
+          {{question.text}}
+        </div>
+        <div class="options-container">
+          <b-form-radio v-for="(option, index) in question.options"
+                        :key="index"
+                        class="option"
+                        v-model="selectedAnswer"
+                        name="answer"
+                        :value="option">
+            {{ option }}
+          </b-form-radio>
+        </div>
       </b-form-group>
     </div>
 	</div>
@@ -62,5 +74,26 @@ export default {
 </script>
 
 <style scoped>
+.question-text {
+  width: 100%;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
+  padding-top: 2vh;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-bottom: 2vh;
+  font-weight: 500;
+}
 
+.options-container {
+  padding-top: 1.5vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  font-size: 19px;
+}
+
+.option {
+  margin-bottom: 10px;
+}
 </style>

@@ -29,9 +29,13 @@
         margin: 0;
         color: white;
         top: 0;
-        left: 3vw;
+        left: 0;
         text-align: center;
         position: relative;
+        border-bottom: 0px solid;
+        padding: 10px;
+        box-shadow: 0.7px 0.5px ghostwhite;
+
     }
 
     .clock {
@@ -42,6 +46,6 @@
         background-color: $vscode-dark !important;
         color: white !important;
         position: absolute;
-        right: 80px;
+        right: 70px;
     }
 </style>

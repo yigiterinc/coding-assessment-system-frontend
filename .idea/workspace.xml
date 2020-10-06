@@ -24,10 +24,13 @@
   <component name="ChangeListManager">
     <list default="true" id="05ead721-740b-47f3-8ef8-8409256aa036" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coding-assessment-system/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/coding-assessment-system/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coding-assessment-system/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/coding-assessment-system/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coding-assessment-system/src/components/MultichoiceQuestion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coding-assessment-system/src/components/MultichoiceQuestion.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coding-assessment-system/src/components/OpenEndedQuestion.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coding-assessment-system/src/components/OpenEndedQuestion.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coding-assessment-system/src/components/TopPanel.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coding-assessment-system/src/components/TopPanel.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coding-assessment-system/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/coding-assessment-system/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coding-assessment-system/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coding-assessment-system/src/views/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coding-assessment-system/src/util/apiUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/coding-assessment-system/src/util/apiUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coding-assessment-system/src/views/AssessmentView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coding-assessment-system/src/views/AssessmentView.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coding-assessment-system/src/views/SurveyView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/coding-assessment-system/src/views/Test.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -60,6 +63,13 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\WebstormProjects\CodeFrontation\coding-assessment-system-frontend\coding-assessment-system\src\assets\data" />
+      <recent name="D:\WebstormProjects\CodeFrontation\coding-assessment-system-frontend\coding-assessment-system\src\assets" />
+      <recent name="D:\WebstormProjects\CodeFrontation\coding-assessment-system-frontend\coding-assessment-system\src\components" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="serve" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -92,6 +102,7 @@
       <workItem from="1600851523823" duration="873000" />
       <workItem from="1600852524754" duration="2477000" />
       <workItem from="1601389263192" duration="11169000" />
+      <workItem from="1601878517961" duration="19589000" />
     </task>
     <servers />
   </component>
@@ -108,28 +119,41 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1897" height="307" key="GridCell.Tab.0.bottom" timestamp="1601398784739">
+    <state x="689" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1601888999078">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601398784739" />
-    <state width="1897" height="307" key="GridCell.Tab.0.center" timestamp="1601398784739">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="689" y="265" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601888999078" />
+    <state width="1897" height="307" key="GridCell.Tab.0.bottom" timestamp="1601921980278">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="307" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601398784739" />
-    <state width="1897" height="307" key="GridCell.Tab.0.left" timestamp="1601398784739">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1897" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601902663046" />
+    <state width="1897" height="307" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601921980278" />
+    <state width="1897" height="307" key="GridCell.Tab.0.center" timestamp="1601921980278">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="307" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601398784739" />
-    <state width="1897" height="307" key="GridCell.Tab.0.right" timestamp="1601398784739">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1897" height="307" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601902663045" />
+    <state width="1897" height="307" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601921980278" />
+    <state width="1897" height="307" key="GridCell.Tab.0.left" timestamp="1601921980278">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1897" height="307" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601398784739" />
+    <state width="1897" height="307" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601902663045" />
+    <state width="1897" height="307" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601921980278" />
+    <state width="1897" height="307" key="GridCell.Tab.0.right" timestamp="1601921980278">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1897" height="307" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601902663045" />
+    <state width="1897" height="307" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1601921980278" />
     <state x="460" y="163" key="SettingsEditor" timestamp="1601397307074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="460" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601397307074" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601886435313">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601886435313" />
     <state x="667" y="243" width="585" height="554" key="find.popup" timestamp="1601397157901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
