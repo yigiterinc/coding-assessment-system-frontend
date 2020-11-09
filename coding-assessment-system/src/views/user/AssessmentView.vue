@@ -1,8 +1,12 @@
 <template>
   <div v-if="questions" class="assessment-view">
     <top-panel></top-panel>
-    <div v-if="questions.containsTest">
-      <test :questions="questions.test" @test-finished="handleTestFinished"></test>
+    <div v-if="!questions.containsTest">
+      <programming-task-view :problem-list="questions.programming"></programming-task-view>
+    </div>
+    <div v-else>
+      <test-view :questions="questions.test" @test-finished="handleTestFinished"></test-view>
+      <programming-task-view v-if="testFinished" :problem-list="questions.programming"></programming-task-view>
     </div>
   </div>
 </template>
@@ -10,15 +14,18 @@
 <script>
     import TopPanel from '@/components/TopPanel'
     import APIUtils from "@/util/apiUtils"
-    import Test from "@/views/Test"
-    
+
+    import TestView from "@/views/user/TestView"
+    import ProgrammingTaskView from "@/views/user/ProgrammingTaskView";
+
     import DummyMixedInterviewQuestions from "@/assets/data/dummyMixedInterviewQuestions"
 
     export default {
       name: "AssessmentView",
       components: {
         TopPanel,
-        Test
+        TestView,
+        ProgrammingTaskView
       },
       data() {
         return {
@@ -55,7 +62,7 @@
 </script>
 
 <style lang="scss" scoped>
-  @import "../assets/variables/colors.scss";
+  @import "../../assets/variables/colors";
 
   .assessment-view {
     background: $vscode-dark;

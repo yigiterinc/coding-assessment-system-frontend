@@ -1,12 +1,13 @@
 <template>
-  <div class="assessment-view-container">
-    <task-navigation></task-navigation>
+  <div class="assessment-view-container" v-if="problem">
     <b-row no-gutters class="assessment-row vh-100">
       <b-col cols="5" class="problem-description-col">
-        <problem-description></problem-description>
+        <problem-description :text="problem.text"></problem-description>
       </b-col>
       <b-col cols="7">
-        <code-editor></code-editor>
+        <monaco-code-editor-wrapper :params="problem.parameters"
+                                    :return-type="problem.returnType">
+        </monaco-code-editor-wrapper>
         <compiler-output></compiler-output>
       </b-col>
     </b-row>
@@ -14,18 +15,26 @@
 </template>
 
 <script>
-  import TaskNavigation from '@/components/TaskNavigation'
   import ProblemDescription from "@/components/ProblemDescription";
-  import CodeEditor from "@/components/CodeEditor";
+  import MonacoCodeEditorWrapper from "@/components/MonacoCodeEditorWrapper";
   import CompilerOutput from "@/components/CompilerOutput";
 
   export default {
     name: "ProgrammingTask",
     components: {
-      TaskNavigation,
       ProblemDescription,
-      CodeEditor,
+      MonacoCodeEditorWrapper,
       CompilerOutput
+    },
+    props: {
+      problem: {
+        type: Object,
+        required: true
+      }
+    },
+    data() {
+      return {
+      }
     }
   }
 </script>

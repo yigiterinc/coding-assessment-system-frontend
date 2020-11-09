@@ -30,8 +30,8 @@
 </template>
 
 <script>
-	import SurveyUtils from '../util/surveyUtils.js'
-	import APIUtils from '../util/apiUtils.js'
+	import SurveyUtils from '../../util/surveyUtils.js'
+	import APIUtils from '../../util/apiUtils.js'
 	import MultichoiceQuestion from "@/components/MultichoiceQuestion";
 	import OpenEndedQuestion from "@/components/OpenEndedQuestion";
 

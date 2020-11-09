@@ -16,13 +16,23 @@ export default {
     components: {
         MonacoEditor
     },
+    props: {
+      returnType: {
+        type: String,
+        required: true
+      },
+      params: {
+        type: Array,
+        required: true
+      }
+    },
     data() {
         return {
             options: {
-                //Monaco Editor Options
+                // Monaco Editor Options
             },
             code: 'class Main {\n' +
-                '\tpublic int solution(int[] arr) {\n' +
+                '\tpublic ' + this.returnType + ' solution(int[] arr) {\n' +
                 '\t\t// Write your solution here\n' +
                 '\t}\n' +
                 '}'

@@ -1,6 +1,6 @@
 <template>
     <div class="top-panel-container">
-        <clock class="clock"></clock> 0h 27m
+        <clock class="clock" :total-time="1620"></clock>
         <b-button class="submit-button" variant="light" size="sm">Submit</b-button>
     </div>
 </template>

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img src="../assets/images/kodcu.jpg" class="home-wallpaper">
+    <img src="../../assets/images/kodcu.jpg" class="home-wallpaper">
     <div class="container">
       <h1 class="header">Welcome to Code Studio</h1>
 
@@ -61,7 +61,7 @@
 </script>
 
 <style lang="scss">
-  @import "../assets/variables/colors";
+  @import "../../assets/variables/colors";
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
   .home {

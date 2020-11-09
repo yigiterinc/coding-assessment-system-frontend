@@ -2,7 +2,7 @@ import SurveyUtils from "@/util/surveyUtils";
 
 export default {
     questions: {
-        containsTest: true,
+        containsTest: false,
         test: [
             {
                 text: 'How was your overall experience with our platform?',
@@ -35,7 +35,7 @@ export default {
                 text: 'Given an int array nums and an int target, find how many unique pairs in the array such that their sum is equal to target. Return the number of pairs.\n' +
                     '\n',
                 returnType: 'int',
-                parameters: ['int[] nums, int target']
+                parameters: ['int[] nums', 'int target']
             }
         ]
     }
