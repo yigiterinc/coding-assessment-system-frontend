@@ -24,5 +24,8 @@ export default {
 		]
 
 		return dummyReceiverList;
+	},
+	fetchAllQuestions: function () {
+		console.log('Will fetch the list of possible questions for creating tests');
 	}
 }
